@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+struct book
+
+{
+
+char name[30],author[30];
+
+int pages;
+
+float price;
+
+}b;
+
+//struct book b;// compiler will allocate 68 bytes
+
+int main()
+
+{
+
+//struct book b;
+
+printf("Enter the detail of the book\n");
+
+scanf("%s%s%d%f",b.name,b.author,&b.pages,&b.price);
+
+printf("Detail of the book is\n");
+
+printf("%s %s %d %f\n",b.name,b.author,b.pages,b.price);
+
+}
